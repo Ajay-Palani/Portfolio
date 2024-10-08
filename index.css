@@ -1,0 +1,219 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.header{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    position: sticky;
+    top: 0px;
+}
+.logo{
+    text-align: center;
+    width: 40%;
+    height: 80px;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 42px;
+    color: white;
+    font-family: sans-serif;
+}
+.nav{
+    width: 60%;
+    height: 80px;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px;
+    transition: 0.3s ease;
+    font-family: sans-serif;
+    font-size: 18px;
+}
+.nav a:hover, nav .active{
+    color: rgba(210, 219, 138, 0.889);
+    border-bottom: 3px solid rgb(188, 25, 25);
+    transition: 0.1s ease;
+}
+.bars{
+    color: rgb(205, 186, 186);
+    text-shadow: 20px red;
+    text-decoration: none;
+}
+button{
+    width: 100px;
+    height: 50px;
+    border-radius: 25px;
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: black;
+    border: 2px solid rgb(235, 232, 232);
+    background-color: rgb(150, 109, 155);
+}
+button:hover{
+    color: rgb(7, 43, 105);
+    background-color: rgb(135, 161, 184);
+}
+.home{
+    width: 100%;
+    height: 649px;
+    display: flex;
+    justify-content: left;
+    padding: 100px; 
+    float: right;
+    background-color: rgba(0, 0, 0, 0.904);
+}
+.image{
+    width: 400px;
+    height: 400px;
+}
+#photo{
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    background-size: cover;
+    border: 2px solid rgb(234, 222, 222);
+}
+.details{
+    padding: 40px;
+    color: rgb(215, 200, 200);
+}
+#name{
+    font-size: 64px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+#desig{
+    font-size: 32px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+p{
+    font-size: 20px;
+    font-family: sans-serif;  
+    color: rgba(241, 232, 232, 0.922);
+}
+.about{
+    width: 100%;
+    height: 649px;
+    background-color: rgba(0, 0, 0, 0.904);
+    color: white;
+}
+.coloumn{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.row{
+    width: 550px;
+    height: 200px;
+    border: 2px solid red;
+    background-image: linear-gradient(rgba(147, 120, 86, 0.767), rgb(223, 208, 68), rgba(178, 180, 139, 0.948), rgb(204, 204, 126));
+    border-radius: 25px;
+    text-align: center;
+}
+.row >h1{
+    padding: 40px;
+}
+.row:hover{
+    background-image: linear-gradient(rgb(32, 71, 75), rgba(99, 99, 42, 0.91), rgb(186, 152, 83), rgb(67, 129, 144));
+}
+.skills{
+    width: 100%;
+    height: 649px;
+    padding: 80px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.904);
+    color: white;
+}
+.skills > div{
+    padding: 10px;
+    display: flex;
+}
+.skills > div:hover  p{
+    display: block;
+    color: white;
+}
+i{
+    font-size: 40px;
+    padding: 10px;
+}
+i:hover{
+    background-color: rgba(136, 9, 136, 0.915);
+}
+.hide{
+    padding: 20px;
+}
+p{
+    display: none;
+}
+.hide:hover + p{
+    font-size: 16px;
+    display: block;
+    position: relative;
+    left: 200px;
+    top: 25px;
+    transition: 1s ease;
+}
+.Services{
+    width: 100%;
+    height: 649px;
+    background-color: rgba(0, 0, 0, 0.904);
+    align-items: center;
+    color: white;
+}
+.exp1{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+.exp{
+    width: 400px;
+    height: 400px;
+    border: 2px solid red;
+    background-image: linear-gradient(rgba(147, 120, 86, 0.767), rgb(223, 208, 68), rgba(178, 180, 139, 0.948), rgb(204, 204, 126));
+    border-radius: 25px;
+    padding: 40px;
+    text-align: center;
+}
+.hide2:hover +h3 +h4 +br +br +p{
+    display: block;
+    color: rgb(29, 7, 1);
+    padding: 10px;
+    font-size: 16px;
+    text-align: justify;
+    transition: 500ms ease-in-out;
+    font-weight: bold;
+}
+.exp:hover{
+    background-image: linear-gradient(rgb(32, 71, 75), rgba(99, 99, 42, 0.91), rgb(186, 152, 83), rgb(67, 129, 144));
+}
+.Contact{
+    padding: 5px;
+    width: 100%;
+    height: 649px;
+    background-color: rgba(0, 0, 0, 0.904);
+    color: white;
+}
+.cont{
+    display: flex;
+    padding: 20px;
+}
+.cont >i{
+    padding: 10px;
+}
+.hide3{
+    position: relative;
+    top: 16px;
+}
+.hide3:hover +p{
+    padding: 10px;
+    display: block;
+    position: relative;
+    left: 200px;
+    transition: all 500ms ease;
+}
